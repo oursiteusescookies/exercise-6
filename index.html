@@ -22,31 +22,37 @@
         font-optical-sizing: auto;
         font-weight: 500;
         font-style: normal;
+        text-align: center;
+        padding: 20px;
+        color: #E26415;
       }
 
       ul {
         list-style-type: none;
-        margin: 0;
-        padding: 0;
         overflow: hidden;
+        text-align: center;
+        font-size: 24px;
+        margin-top: -20px;
       }
 
       ul li {
-        float: left;
+        display: inline-block;
       }
 
       ul li a {
-        display: block;
-        text-align: center;
-        padding: 14px 16px;
+        display: inline-block;
+        padding: 15px;
         text-decoration: none;
+        color: black;
       }
 
       ul li a:hover {
-        background-color: lightgreen;
+        background-color: #F4C95D;
       }
 
-      #site-title {}
+      #site-title {
+        font-size: 80px;
+      }
 
       nav {
         font-family: "Raleway", sans-serif;
@@ -55,20 +61,56 @@
         font-style: normal;
       }
 
-      .container {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        gap: 20px;
+      .text {
+        text-align: center;
       }
 
-      .container div {
-        background-color: red;
-        border: 10px blue;
-        padding: 10px
+      .grid {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        gap: 50px;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        padding: 50px;
+        color: #2E1F27;
+        background-color: #F4C95D;
+      }
+
+      .grid div {
+        background-color: #FFEEAC;
+      }
+
+      .grid img {
+        width: 100%;
       }
       
+      .grid h2 {
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
 
-      footer {}
+      .grid p {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 20px;
+        font-size: 18px;
+      }
+
+      footer {
+        background-color: #FFEEAC;
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        text-align: center;
+        padding: 60px;
+        color: #E26415;
+        font-size: 40px;
+        width: 580px;
+        margin: 0 auto;
+      }
     </style>
   </head>
   <body>
@@ -82,28 +124,30 @@
         <li><a href="/">Contact</a></li>
       </ul>
     </nav>
-    
+
     <h1>At Greg's Banh Mi, we're serving up the perfect marriage of French and Vietnamese culinary traditions—crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavorus that'll make your taste buds sing.</h1>
-    
-    <div class="container">
+
+    <div class="grid">
       <div><img src="banh-mi.jpg" alt="classic pork banh mi">
         <h2>Classic Pork Banh Mi</h2>
         <p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of pâté on a perfectly crusty baguette. A traditional favorite that balances savory, sweet, and tangy flavors in every bite.</p>
       </div>
-      
+
       <div><img src="banh-mi.jpg" alt="lemongrass chicken banh mi">
         <h2>Lemongrass Chicken Banh Mi</h2>
         <p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalapeños, and our house mayo. Light yet satisfying, this sandwich brings bright, aromatic flavors that'll transport you straight to Saigon.</p>
       </div>
-      
+
       <div><img src="banh-mi.jpg" alt="tofu banh mi">
-    <h2>Tofu Banh Mi</h2>
-    <p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p></div>
+        <h2>Tofu Banh Mi</h2>
+        <p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p>
+      </div>
       <div><img src="banh-mi.jpg" alt="five-spice beef banh mi">
-    <h2>Five-Spice Beef Banh Mi</h2>
-    <p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo. Rich, warming spices meet cool, crunchy toppings for an unforgettable flavor experience.</p></div>
+        <h2>Five-Spice Beef Banh Mi</h2>
+        <p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo. Rich, warming spices meet cool, crunchy toppings for an unforgettable flavor experience.</p>
+      </div>
     </div>
-    
+
     <footer>Because life's too short for boring sandwiches. Greg's got you covered—one crispy baguette at a time.</footer>
   </body>
 </html>
